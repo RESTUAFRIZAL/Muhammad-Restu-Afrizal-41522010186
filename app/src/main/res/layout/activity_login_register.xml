@@ -30,9 +30,11 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="Login"
-        android:fontFamily="@font/montserratregular"
+        android:fontFamily="@font/montserratsemibold"
         android:background="@drawable/btn_bg"
         android:textColor="@color/white"
+        android:onClick="move_login"
+        android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,13 +47,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:background="@drawable/btn2_bg"
-        android:fontFamily="@font/montserratregular"
+        android:fontFamily="@font/montserratsemibold"
         android:text="Register"
         android:textColor="#4E5355"
+        android:onClick="move_register"
+        android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/button"/>
 
     <TextView
         android:id="@+id/textView2"

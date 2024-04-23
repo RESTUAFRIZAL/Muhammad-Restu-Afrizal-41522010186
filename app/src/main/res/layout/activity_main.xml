@@ -67,19 +67,19 @@
         app:layout_constraintEnd_toEndOf="@+id/text3"/>
 
     <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/vector_2" />
+
+    <ImageView
         android:id="@+id/imageView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="-20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/vector_1" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-        app:srcCompat="@drawable/vector_2" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -98,6 +98,20 @@
         app:srcCompat="@drawable/vektorsatuuntuksemua"
         android:scaleType="center"/>
 
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="170px"
+        android:layout_height="90px"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/btn_main"
+        android:drawableEnd="@drawable/arrow_forward"
+        android:onClick="pindah"
+        android:paddingRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text4" />
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
@@ -107,17 +121,5 @@
         app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:srcCompat="@drawable/aquabotol" />
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="170px"
-        android:layout_height="90px"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/btn_main"
-        android:drawableEnd="@drawable/arrow_1"
-        android:onClick="pindah"
-        android:paddingRight="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
