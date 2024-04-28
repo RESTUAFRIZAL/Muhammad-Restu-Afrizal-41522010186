@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MP_aqua</string>
+    <string name="scan_code">Scan kode</string>
+    <string name="dibalik">dibalik</string>
+    <string name="tutup">tutup botol dan</string>
+    <string name="tukarkan">tukarkan hadiah</string>
+    <string name="menarik">menarik</string>
 </resources>
+

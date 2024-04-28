@@ -27,4 +27,8 @@ public class Register extends AppCompatActivity {
         Intent back_loginregis2 = new Intent(Register.this, LoginRegister.class);
         startActivity(back_loginregis2);
     }
+    public void move_home2(View view) {
+        Intent move_home2 = new Intent(Register.this, Login.class);
+        startActivity(move_home2);
+    }
 }

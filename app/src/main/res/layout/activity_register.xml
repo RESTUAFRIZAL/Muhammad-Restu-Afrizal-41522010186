@@ -23,12 +23,13 @@
 
     <Button
         android:id="@+id/btn1"
-        android:layout_width="30dp"
-        android:layout_height="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="@drawable/btn_back_login"
         android:drawableStart="@drawable/arrow_back"
+        android:paddingLeft="10dp"
         android:onClick="back_loginregis2"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:layout_marginLeft="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -50,7 +51,7 @@
         android:layout_height="40dp"
         android:background="@drawable/btn2_bg"
         android:foregroundGravity="center"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="70dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text1"
@@ -185,6 +186,7 @@
         android:textColor="@color/white"
         android:fontFamily="@font/montserratsemibold"
         android:textAllCaps="false"
+        android:onClick="move_home2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

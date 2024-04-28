@@ -23,12 +23,13 @@
 
     <Button
         android:id="@+id/btn1"
-        android:layout_width="30dp"
-        android:layout_height="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="@drawable/btn_back_login"
         android:drawableStart="@drawable/arrow_back"
+        android:paddingLeft="10dp"
         android:onClick="back_loginregis"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:layout_marginLeft="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -39,7 +40,7 @@
         android:layout_height="40dp"
         android:background="@drawable/btn2_bg"
         android:foregroundGravity="center"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="70dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text1"
@@ -86,12 +87,12 @@
         android:id="@+id/text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email"
         android:layout_marginLeft="57dp"
         android:fontFamily="@font/montserratregular"
+        android:text="Email"
         android:textColor="#4D4D4D"
         app:layout_constraintBottom_toTopOf="@+id/edit1"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
         android:id="@+id/text3"
@@ -114,6 +115,7 @@
         android:textColor="@color/white"
         android:fontFamily="@font/montserratsemibold"
         android:textAllCaps="false"
+        android:onClick="move_home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

@@ -27,4 +27,8 @@ public class Login extends AppCompatActivity {
         Intent back_loginregis = new Intent(Login.this, LoginRegister.class);
         startActivity(back_loginregis);
     }
+    public void move_home(View view) {
+        Intent move_home = new Intent(Login.this, HomePage.class);
+        startActivity(move_home);
+    }
 }
