@@ -105,7 +105,8 @@
                         android:layout_alignParentTop="true"
                         android:layout_marginLeft="10dp"
                         android:layout_toRightOf="@id/horz1"
-                        android:background="@drawable/bg_horz2">
+                        android:background="@drawable/bg_horz2"
+                        android:onClick="scanbarcode">
 
                         <View
                             android:id="@+id/tutupbtl"
@@ -204,8 +205,7 @@
                 android:layout_width="368dp"
                 android:layout_height="258dp"
                 android:layout_marginTop="450dp"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="10dp"
+                android:layout_marginLeft="25dp"
                 android:background="@drawable/bg_raisa">
 
                 <TextView
@@ -298,282 +298,164 @@
                 android:textColor="#4D4D4D"/>
 
             <RelativeLayout
-                android:id="@+id/relativetraveloka"
-                android:layout_width="175dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_traveloka"
+                android:id="@+id/redeem"
+                android:layout_width="368dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
                 android:layout_below="@id/textvaganza"
-                android:layout_marginLeft="40dp"
-                android:layout_marginTop="14dp">
+                android:background="@drawable/kotak_vaganza"
+                android:onClick="redeemvaganza">
 
-                <TextView
-                    android:id="@+id/text_trav1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Diskon 70% Hotel"
-                    android:fontFamily="@font/montserratmedium"
-                    android:textSize="15dp"
-                    android:textColor="#4D4D4D"
+                <ImageView
+                    android:id="@+id/imgkado"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="25dp"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="15dp"/>
+                    android:background="@drawable/logohadiah"/>
 
                 <TextView
-                    android:id="@+id/text_trav2"
+                    android:id="@+id/textredeem1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="200 Tutup Botol"
-                    android:fontFamily="@font/montserratbold"
-                    android:textSize="15dp"
-                    android:textColor="#4D4D4D"
-                    android:layout_below="@id/text_trav1"
-                    android:layout_marginLeft="20dp"/>
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/bg_plusminus"
-                    android:layout_below="@id/text_trav2"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp">
-
-                    <TextView
-                        android:id="@+id/text_plus1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="1"
-                        android:textColor="@color/white"
-                        android:fontFamily="@font/poppinssemibold"
-                        android:textSize="13dp"
-                        android:layout_marginLeft="29dp"
-                        android:layout_marginTop="4dp"/>
-
-                    <Button
-                        android:id="@+id/btn_plus"
-                        android:layout_width="18dp"
-                        android:layout_height="18dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginLeft="7dp"
-                        android:background="@drawable/plus"/>
-
-                    <Button
-                        android:id="@+id/btn_minus"
-                        android:layout_width="18dp"
-                        android:layout_height="18dp"
-                        android:layout_toRightOf="@id/btn_plus"
-                        android:layout_marginTop="4dp"
-                        android:layout_marginLeft="14dp"
-                        android:background="@drawable/minus"/>
-
-                </RelativeLayout>
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/relativeshopee"
-                android:layout_width="175dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_shopee"
-                android:layout_toRightOf="@id/relativetraveloka"
-                android:layout_below="@id/textvaganza"
-                android:layout_marginLeft="9dp"
-                android:layout_marginTop="14dp">
+                    android:textColor="#1A529D"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:text="Redeem"
+                    android:textSize="22dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toEndOf="@id/imgkado"/>
 
                 <TextView
-                    android:id="@+id/text_shopee1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Cashback Shopeepay"
-                    android:fontFamily="@font/montserratmedium"
+                    android:text="Vaganza"
+                    android:textColor="#18BB15"
+                    android:textSize="22dp"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:layout_toEndOf="@id/textredeem1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pengguna aplikasi bisa melakukan penukaran\nmandiri untuk mendapatkan hadiah"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:textColor="#1A529D"
                     android:textSize="13dp"
-                    android:textColor="#4D4D4D"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="15dp"/>
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/imgkado"/>
 
-                <TextView
-                    android:id="@+id/text_shopee2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="200 Tutup Botol"
-                    android:fontFamily="@font/montserratbold"
-                    android:textSize="15dp"
-                    android:textColor="#4D4D4D"
-                    android:layout_below="@id/text_shopee1"
-                    android:layout_marginLeft="20dp"/>
 
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/bg_plusminus"
-                    android:layout_below="@id/text_shopee2"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp">
-
-                    <TextView
-                        android:id="@+id/text_plus2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="1"
-                        android:textColor="@color/white"
-                        android:fontFamily="@font/poppinssemibold"
-                        android:textSize="13dp"
-                        android:layout_marginLeft="29dp"
-                        android:layout_marginTop="4dp"/>
-
-                    <Button
-                        android:id="@+id/btn_plus2"
-                        android:layout_width="18dp"
-                        android:layout_height="18dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginLeft="7dp"
-                        android:background="@drawable/plus"/>
-
-                    <Button
-                        android:id="@+id/btn_minus2"
-                        android:layout_width="18dp"
-                        android:layout_height="18dp"
-                        android:layout_toRightOf="@id/btn_plus2"
-                        android:layout_marginTop="4dp"
-                        android:layout_marginLeft="14dp"
-                        android:background="@drawable/minus"/>
-                </RelativeLayout>
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/relativefood"
-                android:layout_width="175dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_food"
-                android:layout_below="@id/relativetraveloka"
-                android:layout_marginLeft="40dp"
-                android:layout_marginTop="14dp">
+                android:id="@+id/extra"
+                android:layout_width="368dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/redeem"
+                android:background="@drawable/kotak_vaganza"
+                android:onClick="extravaganza">
+
+                <ImageView
+                    android:id="@+id/imgkado2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/logohadiah"/>
 
                 <TextView
-                    android:id="@+id/text_food1"
+                    android:id="@+id/textredeem2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Food Voucher 35%"
-                    android:fontFamily="@font/montserratmedium"
-                    android:textSize="15dp"
-                    android:textColor="#4D4D4D"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="15dp"/>
+                    android:textColor="#1A529D"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:text="Extra"
+                    android:textSize="22dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toEndOf="@id/imgkado2"/>
 
                 <TextView
-                    android:id="@+id/text_food2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="200 Tutup Botol"
-                    android:fontFamily="@font/montserratbold"
-                    android:textSize="15dp"
-                    android:textColor="#4D4D4D"
-                    android:layout_below="@id/text_food1"
-                    android:layout_marginLeft="20dp"/>
+                    android:text="Vaganza"
+                    android:textColor="#18BB15"
+                    android:textSize="22dp"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:layout_toEndOf="@id/textredeem2"/>
 
-                <RelativeLayout
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/bg_plusminus"
-                    android:layout_below="@id/text_food2"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp">
+                    android:text="Pengguna aplikasi dapat memenangkan\nundian hadiah secara reguler"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:textColor="#1A529D"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/imgkado2"
+                    />
 
-                    <TextView
-                        android:id="@+id/text_plus3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="1"
-                        android:textColor="@color/white"
-                        android:fontFamily="@font/poppinssemibold"
-                        android:textSize="13dp"
-                        android:layout_marginLeft="29dp"
-                        android:layout_marginTop="4dp"/>
-
-                    <Button
-                        android:id="@+id/btn_plus3"
-                        android:layout_width="18dp"
-                        android:layout_height="18dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginLeft="7dp"
-                        android:background="@drawable/plus"/>
-
-                    <Button
-                        android:id="@+id/btn_minus3"
-                        android:layout_width="18dp"
-                        android:layout_height="18dp"
-                        android:layout_toRightOf="@id/btn_plus3"
-                        android:layout_marginTop="4dp"
-                        android:layout_marginLeft="14dp"
-                        android:background="@drawable/minus"/>
-                </RelativeLayout>
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/relativegojek"
-                android:layout_width="175dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_gojek"
-                android:layout_toRightOf="@id/relativefood"
-                android:layout_below="@id/relativeshopee"
-                android:layout_marginLeft="9dp"
-                android:layout_marginTop="14dp">
+                android:id="@+id/royal"
+                android:layout_width="368dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/extra"
+                android:background="@drawable/kotak_vaganza">
+
+                <ImageView
+                    android:id="@+id/imgkado3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/logohadiah"/>
 
                 <TextView
-                    android:id="@+id/text_gojek1"
+                    android:id="@+id/textredeem3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Voucher GoFood"
-                    android:fontFamily="@font/montserratmedium"
-                    android:textSize="15dp"
-                    android:textColor="#4D4D4D"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="15dp"/>
+                    android:textColor="#1A529D"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:text="Royal"
+                    android:textSize="22dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toEndOf="@id/imgkado3"/>
 
                 <TextView
-                    android:id="@+id/text_gojek2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="200 Tutup Botol"
-                    android:fontFamily="@font/montserratbold"
-                    android:textSize="15dp"
-                    android:textColor="#4D4D4D"
-                    android:layout_below="@id/text_gojek1"
-                    android:layout_marginLeft="20dp"/>
+                    android:text="Vaganza"
+                    android:textColor="#18BB15"
+                    android:textSize="22dp"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:layout_toEndOf="@id/textredeem3"/>
 
-                <RelativeLayout
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/bg_plusminus"
-                    android:layout_below="@id/text_gojek2"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp">
+                    android:text="Pengguna aplikasi dapat memenangkan\nundian hadiah royal (big prize)"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:textColor="#1A529D"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/imgkado3"
+                    />
 
-                    <TextView
-                        android:id="@+id/text_plus4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="1"
-                        android:textColor="@color/white"
-                        android:fontFamily="@font/poppinssemibold"
-                        android:textSize="13dp"
-                        android:layout_marginLeft="29dp"
-                        android:layout_marginTop="4dp"/>
-
-                    <Button
-                        android:id="@+id/btn_plus4"
-                        android:layout_width="18dp"
-                        android:layout_height="18dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginLeft="7dp"
-                        android:background="@drawable/plus"/>
-
-                    <Button
-                        android:id="@+id/btn_minus4"
-                        android:layout_width="18dp"
-                        android:layout_height="18dp"
-                        android:layout_toRightOf="@id/btn_plus4"
-                        android:layout_marginTop="4dp"
-                        android:layout_marginLeft="14dp"
-                        android:background="@drawable/minus"/>
-                </RelativeLayout>
             </RelativeLayout>
 
             <TextView
@@ -584,17 +466,16 @@
                 android:fontFamily="@font/montserratbold"
                 android:textSize="18dp"
                 android:textColor="@color/white"
-                android:layout_below="@id/relativefood"
-                android:layout_marginLeft="47dp"
+                android:layout_below="@id/royal"
+                android:layout_marginLeft="40dp"
                 android:layout_marginTop="58dp"/>
-            
+
             <RelativeLayout
-                android:layout_width="362dp"
+                android:layout_width="368dp"
                 android:layout_height="122dp"
                 android:background="@drawable/bg_hadiah"
                 android:layout_below="@id/text_hadiah"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="10dp"
+                android:layout_marginLeft="25dp"
                 android:layout_marginTop="10dp">
 
                 <ImageView
@@ -677,7 +558,6 @@
                         android:layout_marginLeft="14dp"
                         android:background="@drawable/minus"/>
                 </RelativeLayout>
-
             </RelativeLayout>
         </RelativeLayout>
 
@@ -688,7 +568,7 @@
         android:layout_height="match_parent"
         android:id="@+id/hal_view"
         android:layout_gravity="end"
-        app:menu="@menu/side_bar"/>
+        app:headerLayout="@layout/nav_drawer"/>
 
 
 

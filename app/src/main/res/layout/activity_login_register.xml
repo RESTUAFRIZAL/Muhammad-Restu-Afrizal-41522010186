@@ -35,6 +35,7 @@
         android:textColor="@color/white"
         android:onClick="move_login"
         android:textAllCaps="false"
+        android:textSize="17dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,6 +53,7 @@
         android:textColor="#4E5355"
         android:onClick="move_register"
         android:textAllCaps="false"
+        android:textSize="17dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"/>
@@ -60,7 +62,6 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
         android:fontFamily="@font/montserratregular"
         android:gravity="center"
         android:paddingTop="20dp"

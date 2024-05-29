@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RedeemVaganza2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relative1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp">
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_back_login"
+                    android:drawableStart="@drawable/v_arrow_back"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:onClick="back_home_redeemvaganza2"/>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="43dp"
+                    android:textColor="#4D4D4D"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:text="RedeemVaganza"
+                    android:textSize="18dp"
+                    android:layout_toEndOf="@id/btn1"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/relative1">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:text="Sistem"
+                    android:textColor="#4D4D4D"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="35dp"/>
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratregular"
+                    android:text="Pengguna menukarkan hadiah\ndengan memilih dari katalog"
+                    android:textColor="#4D4D4D"
+                    android:textSize="13dp"
+                    android:layout_toEndOf="@id/text1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="80dp"/>
+
+                <TextView
+                    android:id="@+id/text12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:text="Periode\nPenukaran"
+                    android:textColor="#4D4D4D"
+                    android:textSize="13dp"
+                    android:layout_below="@id/text2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="35dp"/>
+
+                <TextView
+                    android:id="@+id/text22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratregular"
+                    android:text="Kapan saja selama periode\nprogram masih aktif"
+                    android:textColor="#4D4D4D"
+                    android:textSize="13dp"
+                    android:layout_below="@id/text2"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/text12"
+                    android:layout_marginLeft="53dp"/>
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/line"
+                    android:layout_below="@id/text12"
+                    android:layout_marginLeft="30dp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/poinanda"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_bg"
+                android:layout_below="@id/relative2"
+                android:layout_marginLeft="40dp"
+                android:onClick="next_extravaganza">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Poin Anda"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="300"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="175dp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/poinanda">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:text="Katalog"
+                    android:textColor="#4D4D4D"
+                    android:textSize="16dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/relativetraveloka"
+                    android:layout_width="175dp"
+                    android:layout_height="223dp"
+                    android:background="@drawable/bg_traveloka2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_below="@id/textView6"
+                    android:onClick="redeemvaganza2">
+
+                    <TextView
+                        android:id="@+id/text_trav0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/montserratsemibold"
+                        android:text="Redeemvaganza"
+                        android:textColor="#1A529D"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:id="@+id/text_trav1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@id/text_trav0"
+                        android:fontFamily="@font/montserratmedium"
+                        android:text="Diskon 70% Hotel"
+                        android:textColor="#4D4D4D"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/text_trav2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_trav1"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/montserratbold"
+                        android:text="200 Tutup Botol"
+                        android:textColor="#4D4D4D"
+                        android:textSize="15dp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_trav2"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/bg_plusminus">
+
+                        <TextView
+                            android:id="@+id/text_plus1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="29dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:text="1"
+                            android:textColor="@color/white"
+                            android:textSize="13dp" />
+
+                        <Button
+                            android:id="@+id/btn_plus"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/plus" />
+
+                        <Button
+                            android:id="@+id/btn_minus"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_toRightOf="@id/btn_plus"
+                            android:background="@drawable/minus" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativefood"
+                    android:layout_width="175dp"
+                    android:layout_height="223dp"
+                    android:background="@drawable/bg_food2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@id/textView6"
+                    android:layout_toEndOf="@id/relativetraveloka">
+
+                    <TextView
+                        android:id="@+id/text_food0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/montserratsemibold"
+                        android:text="Redeemvaganza"
+                        android:textColor="#1A529D"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:id="@+id/text_food1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/montserratmedium"
+                        android:text="Food Voucher 35%"
+                        android:textColor="#4D4D4D"
+                        android:textSize="15dp"
+                        android:layout_below="@id/text_food0"/>
+
+                    <TextView
+                        android:id="@+id/text_food2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_food1"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/montserratbold"
+                        android:text="200 Tutup Botol"
+                        android:textColor="#4D4D4D"
+                        android:textSize="15dp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_food2"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/bg_plusminus">
+
+                        <TextView
+                            android:id="@+id/text_plus3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="29dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:text="1"
+                            android:textColor="@color/white"
+                            android:textSize="13dp" />
+
+                        <Button
+                            android:id="@+id/btn_plus3"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/plus" />
+
+                        <Button
+                            android:id="@+id/btn_minus3"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_toRightOf="@id/btn_plus3"
+                            android:background="@drawable/minus" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativegojek"
+                    android:layout_width="175dp"
+                    android:layout_height="223dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_gojek2"
+                    android:layout_below="@id/relativetraveloka">
+
+                    <TextView
+                        android:id="@+id/text_gojek0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/montserratsemibold"
+                        android:text="Redeemvaganza"
+                        android:textColor="#1A529D"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:id="@+id/text_gojek1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@id/text_gojek0"
+                        android:fontFamily="@font/montserratmedium"
+                        android:text="Voucher GoFood"
+                        android:textColor="#4D4D4D"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/text_gojek2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_gojek1"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/montserratbold"
+                        android:text="200 Tutup Botol"
+                        android:textColor="#4D4D4D"
+                        android:textSize="15dp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_gojek2"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/bg_plusminus">
+
+                        <TextView
+                            android:id="@+id/text_plus4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="29dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:text="1"
+                            android:textColor="@color/white"
+                            android:textSize="13dp" />
+
+                        <Button
+                            android:id="@+id/btn_plus4"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/plus" />
+
+                        <Button
+                            android:id="@+id/btn_minus4"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_toRightOf="@id/btn_plus4"
+                            android:background="@drawable/minus" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeshopee"
+                    android:layout_width="175dp"
+                    android:layout_height="223dp"
+                    android:background="@drawable/bg_shopee2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/relativefood"
+                    android:layout_toEndOf="@id/relativegojek">
+
+                    <TextView
+                        android:id="@+id/text_shopee0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/montserratsemibold"
+                        android:text="Redeemvaganza"
+                        android:textColor="#1A529D"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:id="@+id/text_shopee1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@id/text_shopee0"
+                        android:fontFamily="@font/montserratmedium"
+                        android:text="Cashback Shopeepay"
+                        android:textColor="#4D4D4D"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/text_shopee2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_shopee1"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/montserratbold"
+                        android:text="200 Tutup Botol"
+                        android:textColor="#4D4D4D"
+                        android:textSize="15dp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_shopee2"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_plusminus">
+
+                        <TextView
+                            android:id="@+id/text_plus2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="29dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:text="1"
+                            android:textColor="@color/white"
+                            android:textSize="13dp" />
+
+                        <Button
+                            android:id="@+id/btn_plus2"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/plus" />
+
+                        <Button
+                            android:id="@+id/btn_minus2"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_toRightOf="@id/btn_plus2"
+                            android:background="@drawable/minus" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

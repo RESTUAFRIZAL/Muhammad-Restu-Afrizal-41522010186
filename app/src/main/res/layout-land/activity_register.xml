@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_putih">
+
+            <RelativeLayout
+                android:id="@+id/relative1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="30dp"
+                android:onClick="back_loginregis2">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/v_arrow_back" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative1"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:text="Register"
+                    android:textColor="#4D4D4D"
+                    android:textSize="30dp"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative2"
+                android:layout_marginTop="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Lengkap"
+                    android:fontFamily="@font/montserratmedium"
+                    android:textSize="25dp"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative2"
+                android:layout_marginTop="80dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edit11"
+                    android:layout_width="570dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/btn2_bg"
+                    android:foregroundGravity="center"
+                    app:startIconDrawable="@drawable/groups_3"
+                    android:layout_centerInParent="true"
+                    app:startIconTint="#1A529D">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="570dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:ems="14"
+                        android:inputType="textEmailAddress"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative31"
+                android:layout_marginTop="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:fontFamily="@font/montserratmedium"
+                    android:textSize="25dp"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative31"
+                android:layout_marginTop="80dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edit1"
+                    android:layout_width="570dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/btn2_bg"
+                    android:foregroundGravity="center"
+                    app:startIconDrawable="@drawable/mail"
+                    android:layout_centerInParent="true"
+                    app:startIconTint="#1A529D">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="570dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:ems="14"
+                        android:inputType="textEmailAddress"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative3"
+                android:layout_marginTop="70dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edit2"
+                    android:layout_width="570dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/btn2_bg"
+                    android:foregroundGravity="center"
+                    app:passwordToggleDrawable="@drawable/eye"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="#1A529D"
+                    app:startIconDrawable="@drawable/lock"
+                    app:startIconTint="#1A529D"
+                    android:layout_centerInParent="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="570dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:ems="14"
+                        android:inputType="textEmailAddress"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative3"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kata Sandi"
+                    android:fontFamily="@font/montserratmedium"
+                    android:textSize="25dp"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative4"
+                android:layout_marginTop="70dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edit21"
+                    android:layout_width="570dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/btn2_bg"
+                    android:foregroundGravity="center"
+                    app:passwordToggleDrawable="@drawable/eye"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="#1A529D"
+                    app:startIconDrawable="@drawable/lock"
+                    app:startIconTint="#1A529D"
+                    android:layout_centerInParent="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="570dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:ems="14"
+                        android:inputType="textEmailAddress"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative4"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Konfirmasi Kata Sandi"
+                    android:fontFamily="@font/montserratmedium"
+                    android:textSize="25dp"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative4"
+                android:layout_marginTop="400dp"
+                android:layout_marginBottom="50dp">
+
+                <Button
+                    android:layout_width="570dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/btn_bg"
+                    android:text="Register"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:textAllCaps="false"
+                    android:onClick="move_home2"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/btn_back_login"
-        android:drawableStart="@drawable/arrow_back"
+        android:drawableStart="@drawable/v_arrow_back"
         android:paddingLeft="10dp"
         android:onClick="back_loginregis"
         android:layout_marginTop="40dp"
@@ -88,9 +88,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="57dp"
-        android:fontFamily="@font/montserratregular"
+        android:fontFamily="@font/montserratmedium"
         android:text="Email"
         android:textColor="#4D4D4D"
+        android:textSize="17dp"
         app:layout_constraintBottom_toTopOf="@+id/edit1"
         app:layout_constraintStart_toStartOf="parent"/>
 
@@ -99,9 +100,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Kata Sandi"
-        android:fontFamily="@font/montserratregular"
+        android:fontFamily="@font/montserratmedium"
         android:layout_marginLeft="57dp"
         android:textColor="#4D4D4D"
+        android:textSize="17dp"
         app:layout_constraintBottom_toTopOf="@+id/edit2"
         app:layout_constraintStart_toStartOf="parent"/>
 

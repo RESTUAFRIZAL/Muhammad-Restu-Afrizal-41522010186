@@ -5,121 +5,87 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/desain_tanpa_judul__37__1"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/text"
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserratbold"
-        android:text="KEBAIKAN"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintLeft_toLeftOf="@id/imageView2"
-        app:layout_constraintRight_toRightOf="@id/imageView2"
-        app:layout_constraintTop_toBottomOf="@id/imageView2"
-        app:layout_constraintVertical_bias="0.37"/>
+        android:background="@drawable/bg_gunung_main">
 
-    <TextView
-        android:id="@+id/text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/montserratregular"
-        android:text="BERAWAL"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        android:gravity="center"
-        app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintLeft_toLeftOf="@id/text"
-        app:layout_constraintRight_toRightOf="@id/text"
-        app:layout_constraintTop_toBottomOf="@+id/text"/>
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/aquaa" />
 
-    <TextView
-        android:id="@+id/text3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:fontFamily="@font/montserratsemibold"
-        android:text="  DARI SINI"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text2"
-        app:layout_constraintVertical_bias="0.0"/>
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratbold"
+            android:text="KEBAIKAN"
+            android:textColor="@color/white"
+            android:textSize="45dp"
+            android:layout_marginTop="190dp"
+            android:layout_marginLeft="80dp"/>
 
-    <TextView
-        android:id="@+id/text4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tepercaya\nlebih dari 45 tahun"
-        android:gravity="center"
-        android:textColor="@color/white"
-        android:fontFamily="@font/montserratregular"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/text3"
-        app:layout_constraintStart_toStartOf="@+id/text3"
-        app:layout_constraintEnd_toEndOf="@+id/text3"/>
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratregular"
+            android:text="BERAWAL"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:layout_below="@id/img1"
+            android:layout_marginLeft="113dp"
+            android:layout_marginTop="10dp"/>
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-        app:srcCompat="@drawable/vector_2" />
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DARI SINI"
+            android:fontFamily="@font/montserratsemibold"
+            android:textSize="35dp"
+            android:textColor="@color/white"
+            android:layout_below="@id/img1"
+            android:layout_marginLeft="117dp"
+            android:layout_marginTop="55dp"/>
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="-20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/vector_1" />
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terpercaya lebih\ndari 45 tahun"
+            android:fontFamily="@font/montserratmedium"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_below="@id/img1"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="114dp"/>
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/aqua" />
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="190px"
+            android:layout_height="120px"
+            android:background="@drawable/btn_main"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/v_arrow_forward"
+            android:onClick="pindah"
+            android:layout_below="@id/text4"
+            android:layout_marginLeft="165dp" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="500dp"
-        app:srcCompat="@drawable/vektorsatuuntuksemua"
-        android:scaleType="center"/>
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="200dp"
+            android:background="@drawable/aquabotoll"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="155dp" />
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="170px"
-        android:layout_height="90px"
-        android:layout_marginTop="8dp"
-        android:paddingLeft="20dp"
-        android:background="@drawable/btn_main"
-        android:drawableEnd="@drawable/arrow_forward"
-        android:onClick="pindah"
-        android:paddingRight="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text4" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="420dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:srcCompat="@drawable/aquabotol" />
-
-
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

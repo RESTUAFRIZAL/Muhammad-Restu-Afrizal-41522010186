@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RedeemVaganza">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_redeemvaganza">
+
+            <RelativeLayout
+                android:id="@+id/relative1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp">
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_back_login"
+                    android:drawableStart="@drawable/v_arrow_back"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:onClick="back_redeemvaganza2"/>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="43dp"
+                    android:textColor="#4D4D4D"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:text="RedeemVaganza"
+                    android:textSize="18dp"
+                    android:layout_toEndOf="@id/btn1"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative1"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratbold"
+                    android:text="Royalvaganza"
+                    android:textColor="#1A529D"
+                    android:textSize="15dp"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative2"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/traveloka_vaganza"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative3"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/t_redeemvaganza"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative4"
+                android:layout_marginTop="130dp">
+
+                <TextView
+                    android:id="@+id/textJumlahPenukaran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:text="Jumlah Penukaran"
+                    android:textColor="#4D4D4D"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:text="Total Poin"
+                    android:textColor="#4D4D4D"
+                    android:textSize="15dp"
+                    android:layout_below="@id/textJumlahPenukaran"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:background="@drawable/bg_plusminus"
+                    android:layout_toEndOf="@id/textJumlahPenukaran">
+
+                    <TextView
+                        android:id="@+id/text_plus1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="29dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:text="1"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/btn_plus"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/plus" />
+
+                    <Button
+                        android:id="@+id/btn_minus"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_toRightOf="@id/btn_plus"
+                        android:background="@drawable/minus" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:text="400"
+                    android:textColor="#4D4D4D"
+                    android:textSize="15dp"
+                    android:layout_toEndOf="@id/textView8"
+                    android:layout_below="@id/textJumlahPenukaran"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="200dp"/>
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_bg"
+                    android:text="Redeem"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/montserratsemibold"
+                    android:textAllCaps="false"
+                    android:layout_below="@id/textView8"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="40dp"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

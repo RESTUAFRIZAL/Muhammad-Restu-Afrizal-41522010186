@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import android.view.View;
+import android.content.Intent;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -33,4 +35,20 @@ public class HomePage extends AppCompatActivity {
         NavigationView navigationView = findViewById(R.id.hal_view);
         drawerLayout.openDrawer(GravityCompat.END);
     }
+
+    public void redeemvaganza(View view) {
+        Intent redeemvaganza = new Intent(HomePage.this, RedeemVaganza2.class);
+        startActivity(redeemvaganza);
+    }
+
+    public void extravaganza(View view) {
+        Intent extravaganza = new Intent(HomePage.this, SelamatUndian.class);
+        startActivity(extravaganza);
+    }
+
+    public void scanbarcode(View view) {
+        Intent scanbarcode = new Intent(HomePage.this, ScanTutupBotol.class);
+        startActivity(scanbarcode);
+    }
+
 }
